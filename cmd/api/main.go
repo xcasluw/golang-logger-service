@@ -50,7 +50,17 @@ func main() {
 	}
 
 	// start web server
-	go app.serve()
+	// go app.serve()
+	log.Println("starting service on port:", webPort)
+	srv := &http.Server{
+		Addr:    fmt.Sprintf(":%s", webPort),
+		Handler: app.routes(),
+	}
+
+	err = srv.ListenAndServe()
+	if err != nil {
+		log.Panic()
+	}
 }
 
 func (app *Config) serve() {
