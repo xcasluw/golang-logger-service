@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 	"time"
-	"xcasluw/golang-logger/service/data"
+	"xcasluw/golang-logger-service/data"
 
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"

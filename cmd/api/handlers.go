@@ -2,7 +2,7 @@ package main
 
 import (
 	"net/http"
-	"xcasluw/golang-logger/service/data"
+	"xcasluw/golang-logger-service/data"
 )
 
 type JSONPayload struct {
